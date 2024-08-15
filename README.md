@@ -33,7 +33,7 @@ https://github.com/raz121991/TaskManagement.git
 
 -Configure the Database: go to appsetting.json and make sure to update the Connectionstring under connectionstrings to have your sql server name properly set there.
 
-Apply Database Migrations: in cmd type: dotnet ef database update
+-Apply Database Migrations: in cmd type: dotnet ef database update.
 Ensure that the Entity Framework Core CLI tools are installed if the command above does not work: dotnet tool install --global dotnet-ef
 
 Run the Application dotnet run
