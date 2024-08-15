@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular
+.angular/
+coverage/
+src/environments/*.ts
+
+# Visual Studio
+.vscode/
+.vs/
+*.csproj.user
+*.csproj.vspscc
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
+
+# .NET Core
+bin/
+obj/
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+
+# Rider
+.idea/
+.idea_modules/
+.idea_modules.xml
+.idea_cache/
+.idea/ .idea/
+*.iml
+.idea/misc.xml
+.idea_modules/
+.idea/
+.idea/libraries/
