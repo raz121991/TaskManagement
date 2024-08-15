@@ -1,6 +1,6 @@
 Angular Task Management App
 
-This project is the frontend of a task management application built using Angular 18. It provides a user-friendly interface for managing tasks, including features for adding, editing, deleting, and viewing tasks.
+This project is the frontend of a task management application built using Angular 18 in the client and .NET Core 8 in the backend. It provides a user-friendly interface for managing tasks, including features for adding, editing, deleting, and viewing tasks.
 
 
 
