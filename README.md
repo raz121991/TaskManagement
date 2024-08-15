@@ -27,9 +27,12 @@ This is the backend for the Task Manager application built using .NET Core. Foll
 
 Clone the Repository:
 https://github.com/raz121991/TaskManagement.git
--navigate to the backend folder: cd TaskManagement\backend
--Restore Dependencies: enter the command in cmd: dotnet restore
+-navigate to the backend folder: cd TaskManagement\backend.
+
+-Restore Dependencies: enter the command in cmd: dotnet restore.
+
 -Configure the Database: go to appsetting.json and make sure to update the Connectionstring under connectionstrings to have your sql server name properly set there.
+
 Apply Database Migrations: in cmd type: dotnet ef database update
 Ensure that the Entity Framework Core CLI tools are installed if the command above does not work: dotnet tool install --global dotnet-ef
 
