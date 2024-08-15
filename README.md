@@ -27,7 +27,8 @@ This is the backend for the Task Manager application built using .NET Core. Foll
 
 Clone the Repository:
 https://github.com/raz121991/TaskManagement.git
--navigate to the backend folder: cd TaskManagement\backend.
+
+-Navigate to the backend folder: cd TaskManagement\backend.
 
 -Restore Dependencies: enter the command in cmd: dotnet restore.
 
