@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+    <span>Task Management</span>
+  </mat-toolbar>
+  
+  <div class="container">
+    <app-task-form
+    #taskForm
+    [selectedTask]="selectedTask"
+    (taskAdded)="handleTaskAdded($event)"
+    (taskUpdated)="handleTaskUpdated($event)">
+  </app-task-form>
+
+    <mat-card *ngIf="errorMessage" class="error-card">
+        <mat-card-content>
+          <p>{{ errorMessage }}</p>
+        </mat-card-content>
+      </mat-card>
+
+    <div *ngIf="tasks.length > 0">
+         <app-task-list
+      [tasks]="tasks"
+      (edit)="handleEditTask($event)"
+      (delete)="handleTaskDelete($event)">
+    </app-task-list>
+    </div>
+  </div>

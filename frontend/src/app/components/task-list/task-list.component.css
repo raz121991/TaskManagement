@@ -1,0 +1,56 @@
+.task-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  mat-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  mat-card-content {
+    color: #666;
+  }
+  
+  mat-card-content p {
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  
+  .mat-card-content strong {
+    color: #444;
+  }
+  .icons {
+    float: right;
+    cursor: pointer;
+  }
+  
+  .edit-icon {
+    color: #ff9800; 
+    margin-left: 10px;
+    transition: color 0.2s;
+  }
+  
+  .edit-icon:hover {
+    color: #e65100; 
+  }
+  
+  .delete-icon {
+    color: #f44336; 
+    margin-left: 10px;
+    transition: color 0.2s;
+  }
+  
+  .delete-icon:hover {
+    color: #b71c1c; 
+  }

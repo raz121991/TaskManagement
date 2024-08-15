@@ -1,0 +1,17 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  mat-card {
+    margin-bottom: 20px;
+  }
+
+  .error-card {
+    background-color: #f8d7da;
+    color: #721c24;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }

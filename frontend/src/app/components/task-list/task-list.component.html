@@ -1,0 +1,13 @@
+<mat-card *ngFor="let task of tasks" class="task-card">
+    <mat-card-title>{{ task.title }}
+        <span class="icons">
+            <mat-icon  class="edit-icon" (click)="editTask(task)">edit</mat-icon>
+            <mat-icon class="delete-icon" (click)="deleteTask(task.id)">delete</mat-icon>
+          </span>
+    </mat-card-title>
+    
+    <mat-card-content>
+      <p>{{ task.description }}</p>
+      <p><strong>Due Date:</strong> {{ task.dueDate | date:'fullDate' }}</p>
+    </mat-card-content>
+  </mat-card>
