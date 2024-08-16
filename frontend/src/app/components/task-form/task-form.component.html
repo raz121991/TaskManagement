@@ -1,9 +1,9 @@
 <mat-card>
-    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="task-form">
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit(formDirective)" class="task-form" #formDirective="ngForm">
       <mat-form-field appearance="fill" class="task-input">
         <mat-label>Task Title</mat-label>
-        <input matInput formControlName="title" placeholder="Enter task title" required>
-        <mat-error *ngIf="taskForm.get('title')?.hasError('required')">
+        <input matInput formControlName="title" placeholder="Enter task title" >
+        <mat-error *ngIf="showTitleError">
           Task Title is required
         </mat-error>
         <mat-error *ngIf="taskForm.get('title')?.hasError('maxlength')">
@@ -13,8 +13,8 @@
   
       <mat-form-field appearance="fill" class="task-input">
         <mat-label>Description</mat-label>
-        <textarea matInput formControlName="description" placeholder="Enter task description" required></textarea>
-        <mat-error *ngIf="taskForm.get('description')?.hasError('required')">
+        <textarea matInput formControlName="description" placeholder="Enter task description" ></textarea>
+        <mat-error *ngIf="showDescriptionError">
           Description is required
         </mat-error>
         <mat-error *ngIf="taskForm.get('description')?.hasError('maxlength')">
@@ -24,10 +24,10 @@
   
       <mat-form-field appearance="fill" class="task-input">
         <mat-label>Due Date</mat-label>
-        <input matInput [matDatepicker]="picker" formControlName="dueDate" [min]="minDate" required>
+        <input matInput [matDatepicker]="picker" formControlName="dueDate" [min]="minDate" >
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
-        <mat-error *ngIf="taskForm.get('dueDate')?.hasError('required')">
+        <mat-error *ngIf="showDueDateError">
           Due Date is required
         </mat-error>
         <mat-error *ngIf="taskForm.get('dueDate')?.hasError('invalidDate')">

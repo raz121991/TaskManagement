@@ -37,7 +37,6 @@ export class TaskPageComponent implements OnInit {
       next: (newTask) => {
         this.tasks.push(newTask);
         this.errorMessage = null;
-        this.taskFormComponent.resetForm();
       },
       error: (err) => {
         this.errorMessage = err.message;
@@ -54,7 +53,6 @@ export class TaskPageComponent implements OnInit {
         }
         this.selectedTask = null;
         this.errorMessage = null;
-        this.taskFormComponent.resetForm();
       },
       error: (err) => {
         this.errorMessage = err.message;
